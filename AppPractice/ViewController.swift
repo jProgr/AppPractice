@@ -9,4 +9,9 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
     }
+    
+    @IBAction func changeButton(_ sender: UIButton)
+    {
+        labelResult.text = textMessage.text
+    }
 }
