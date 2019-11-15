@@ -12,6 +12,6 @@ class ViewController: UIViewController
     
     @IBAction func changeButton(_ sender: UIButton)
     {
-        labelResult.text = textMessage.text
+        labelResult.text = textMessage.text?.uppercased()
     }
 }
