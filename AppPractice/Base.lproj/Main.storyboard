@@ -15,18 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-Ym-6aL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-Ym-6aL">
                                 <rect key="frame" x="114" y="319" width="147" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-fL-GTD">
+                                <rect key="frame" x="164" y="385" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeLabel:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="Sci-nY-de2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qQF-fL-GTD" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="164" id="0q6-wb-NB8"/>
+                            <constraint firstItem="qQF-fL-GTD" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="5So-DN-mjs"/>
+                            <constraint firstItem="qQF-fL-GTD" firstAttribute="top" secondItem="zXZ-Ym-6aL" secondAttribute="bottom" constant="38" id="GGu-br-MkV"/>
+                            <constraint firstItem="zXZ-Ym-6aL" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="bsa-EW-G67"/>
+                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="qQF-fL-GTD" secondAttribute="bottom" constant="252" id="q7p-ni-RGm"/>
+                            <constraint firstItem="zXZ-Ym-6aL" firstAttribute="centerX" secondItem="qQF-fL-GTD" secondAttribute="centerX" id="viY-ne-hM9"/>
+                            <constraint firstItem="zXZ-Ym-6aL" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="319" id="z6k-dK-mff"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
+                    <connections>
+                        <outlet property="mainLabel" destination="zXZ-Ym-6aL" id="77C-4i-RC5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
