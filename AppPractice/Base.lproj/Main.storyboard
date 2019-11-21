@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0R-Em-0Zo">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,28 +12,32 @@
             <objects>
                 <viewController id="e0R-Em-0Zo" customClass="ViewController" customModule="AppPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rRV-YO-KW5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-hF-tCn">
-                                <rect key="frame" x="139" y="597" width="97" height="34"/>
+                                <rect key="frame" x="177" y="666" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="fWb-ZA-4QD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20F-8s-p3G">
-                                <rect key="frame" x="139" y="501" width="97" height="34"/>
+                                <rect key="frame" x="177" y="570" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0m8-qo-BVa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="20F-8s-p3G" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="501" id="9AA-kg-HU3"/>
-                            <constraint firstItem="xW3-hF-tCn" firstAttribute="top" secondItem="20F-8s-p3G" secondAttribute="bottom" constant="62" id="FJR-OL-r5s"/>
-                            <constraint firstItem="20F-8s-p3G" firstAttribute="trailing" secondItem="xW3-hF-tCn" secondAttribute="trailing" id="WCi-g7-30G"/>
-                            <constraint firstItem="20F-8s-p3G" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="cxn-WN-iT4"/>
-                            <constraint firstItem="20F-8s-p3G" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="139" id="dU3-Gy-QBa"/>
-                            <constraint firstItem="20F-8s-p3G" firstAttribute="leading" secondItem="xW3-hF-tCn" secondAttribute="leading" id="phJ-cW-y5s"/>
+                            <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="20F-8s-p3G" secondAttribute="centerX" id="A6f-xN-E6k"/>
+                            <constraint firstItem="xW3-hF-tCn" firstAttribute="top" secondItem="20F-8s-p3G" secondAttribute="bottom" constant="62" id="MrP-ld-oy4"/>
+                            <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="RLH-Hx-1ux"/>
+                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="xW3-hF-tCn" secondAttribute="bottom" constant="36" id="VEh-as-u1S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
