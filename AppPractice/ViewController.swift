@@ -2,6 +2,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    @IBOutlet var textField: UITextField!
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -19,6 +21,11 @@ class ViewController: UIViewController
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        textField.placeholder = "Email address here"
+        textField.textColor = UIColor.red
+        textField.font = UIFont(name: "Courier", size: 16)
+        textField.clearButtonMode = .whileEditing
     }
     
     @objc func dismissKeyboard()
