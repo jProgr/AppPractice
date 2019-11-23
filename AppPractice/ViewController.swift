@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet var textField: UITextField!
+    @IBOutlet var otherTextField: UITextField!
 
     override func viewDidLoad()
     {
@@ -47,5 +48,10 @@ class ViewController: UIViewController
         {
             if self.view.frame.origin.y != 0 { self.view.frame.origin.y = 0 }
         }
+    }
+    
+    @IBAction func displayPassword(_ sender: UIButton)
+    {
+        textField.text = otherTextField.text?.uppercased()
     }
 }

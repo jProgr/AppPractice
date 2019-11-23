@@ -31,10 +31,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCa-06-i23">
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="displayPassword:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="3Rg-Di-NFb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="gCa-06-i23" firstAttribute="centerX" secondItem="20F-8s-p3G" secondAttribute="centerX" id="3Kt-Rf-eNR"/>
                             <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="20F-8s-p3G" secondAttribute="centerX" id="A6f-xN-E6k"/>
+                            <constraint firstItem="gCa-06-i23" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="CId-ux-x25"/>
                             <constraint firstItem="xW3-hF-tCn" firstAttribute="top" secondItem="20F-8s-p3G" secondAttribute="bottom" constant="62" id="MrP-ld-oy4"/>
                             <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="RLH-Hx-1ux"/>
                             <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="xW3-hF-tCn" secondAttribute="bottom" constant="36" id="VEh-as-u1S"/>
@@ -43,6 +52,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
                     <connections>
+                        <outlet property="otherTextField" destination="20F-8s-p3G" id="Skn-yx-2Pc"/>
                         <outlet property="textField" destination="xW3-hF-tCn" id="YPz-WN-tXA"/>
                     </connections>
                 </viewController>
