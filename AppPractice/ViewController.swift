@@ -17,5 +17,11 @@ class ViewController: UIViewController
     
     @IBAction func changeStepper(_ sender: UIButton)
     {
+        stepper.minimumValue = -10
+        stepper.maximumValue = -5
+        stepper.stepValue = 0.5
+        stepper.isContinuous = true
+        stepper.autorepeat = true
+        stepper.wraps = true
     }
 }
