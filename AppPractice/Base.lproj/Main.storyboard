@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KF-ApAn48-7133-4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UOA-Rg-36T">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KF-ApAn48-7133-4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UOA-Rg-36T">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -24,6 +24,9 @@
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
+                    <connections>
+                        <outlet property="imageView" destination="UOA-Rg-36T" id="nfS-Zn-2jl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
