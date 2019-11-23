@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0R-Em-0Zo">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,53 +12,54 @@
             <objects>
                 <viewController id="e0R-Em-0Zo" customClass="ViewController" customModule="AppPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rRV-YO-KW5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-hF-tCn">
-                                <rect key="frame" x="177" y="666" width="60" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="fWb-ZA-4QD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20F-8s-p3G">
-                                <rect key="frame" x="177" y="570" width="60" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="0m8-qo-BVa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCa-06-i23">
-                                <rect key="frame" x="184" y="353" width="46" height="30"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-7a-GpJ">
+                                <rect key="frame" x="140" y="317.5" width="95" height="32"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="e0R-Em-0Zo" eventType="valueChanged" id="3h1-IO-vLL"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnq-Bg-lVt">
+                                <rect key="frame" x="166" y="265" width="52" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-Gi-NcN">
+                                <rect key="frame" x="164" y="373.5" width="47" height="29.5"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="displayPassword:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="3Rg-Di-NFb"/>
+                                    <action selector="changeStepper:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="sY4-lt-mnl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gCa-06-i23" firstAttribute="centerX" secondItem="20F-8s-p3G" secondAttribute="centerX" id="3Kt-Rf-eNR"/>
-                            <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="20F-8s-p3G" secondAttribute="centerX" id="A6f-xN-E6k"/>
-                            <constraint firstItem="gCa-06-i23" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="CId-ux-x25"/>
-                            <constraint firstItem="xW3-hF-tCn" firstAttribute="top" secondItem="20F-8s-p3G" secondAttribute="bottom" constant="62" id="MrP-ld-oy4"/>
-                            <constraint firstItem="xW3-hF-tCn" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="RLH-Hx-1ux"/>
-                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="xW3-hF-tCn" secondAttribute="bottom" constant="36" id="VEh-as-u1S"/>
+                            <constraint firstItem="JJ8-7a-GpJ" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="140" id="34T-ZE-Wge"/>
+                            <constraint firstItem="JJ8-7a-GpJ" firstAttribute="top" secondItem="mnq-Bg-lVt" secondAttribute="bottom" constant="21.5" id="9Vl-Rk-o3j"/>
+                            <constraint firstItem="mnq-Bg-lVt" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="265" id="JRK-C0-MJo"/>
+                            <constraint firstItem="MAu-Gi-NcN" firstAttribute="top" secondItem="JJ8-7a-GpJ" secondAttribute="bottom" constant="24" id="R1u-1b-lLv"/>
+                            <constraint firstItem="JJ8-7a-GpJ" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="S0y-o5-evc"/>
+                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="MAu-Gi-NcN" secondAttribute="bottom" constant="264" id="ahh-y5-Tq8"/>
+                            <constraint firstItem="mnq-Bg-lVt" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="166" id="cnq-OY-6Vx"/>
+                            <constraint firstItem="JJ8-7a-GpJ" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="fo6-3e-X4l"/>
+                            <constraint firstItem="MAu-Gi-NcN" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="164" id="g81-3G-dtx"/>
+                            <constraint firstItem="JJ8-7a-GpJ" firstAttribute="centerX" secondItem="MAu-Gi-NcN" secondAttribute="centerX" id="syv-T9-2Ve"/>
+                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="trailing" secondItem="mnq-Bg-lVt" secondAttribute="trailing" constant="157" id="tIL-7Q-NSJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
                     <connections>
-                        <outlet property="otherTextField" destination="20F-8s-p3G" id="Skn-yx-2Pc"/>
-                        <outlet property="textField" destination="xW3-hF-tCn" id="YPz-WN-tXA"/>
+                        <outlet property="label" destination="mnq-Bg-lVt" id="PKx-Fq-3PU"/>
+                        <outlet property="stepper" destination="JJ8-7a-GpJ" id="gqo-zI-wbe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076.8115942028987" y="-123.21428571428571"/>
+            <point key="canvasLocation" x="1076" y="-123.68815592203899"/>
         </scene>
     </scenes>
 </document>
