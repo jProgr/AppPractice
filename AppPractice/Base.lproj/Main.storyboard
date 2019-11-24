@@ -15,17 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KF-ApAn48-7133-4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UOA-Rg-36T">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YII-9D-eBA">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWC-PH-w2j">
+                                <rect key="frame" x="164" y="231" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="shc-uZ-mla"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iFZ-Lw-RKZ" firstAttribute="bottom" secondItem="YII-9D-eBA" secondAttribute="bottom" constant="270" id="Bf1-cJ-7JR"/>
+                            <constraint firstItem="iWC-PH-w2j" firstAttribute="centerX" secondItem="YII-9D-eBA" secondAttribute="centerX" id="JrS-Zq-jLi"/>
+                            <constraint firstItem="YII-9D-eBA" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="67" id="MEW-uq-RZa"/>
+                            <constraint firstItem="iWC-PH-w2j" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="231" id="SAQ-Fr-Uiy"/>
+                            <constraint firstItem="YII-9D-eBA" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="ZMZ-R4-jy2"/>
+                            <constraint firstItem="YII-9D-eBA" firstAttribute="top" secondItem="iWC-PH-w2j" secondAttribute="bottom" constant="8" id="ifE-kq-hXs"/>
+                            <constraint firstItem="iWC-PH-w2j" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="n4W-r1-sCj"/>
+                            <constraint firstItem="iWC-PH-w2j" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="164" id="yRo-qW-1Xf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
                     <connections>
-                        <outlet property="imageView" destination="UOA-Rg-36T" id="nfS-Zn-2jl"/>
+                        <outlet property="button" destination="iWC-PH-w2j" id="oFN-af-DOP"/>
+                        <outlet property="textView" destination="YII-9D-eBA" id="8iD-vG-FKr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -33,7 +55,4 @@
             <point key="canvasLocation" x="1076" y="-123.68815592203899"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="KF-ApAn48-7133-4.jpg" width="2181" height="2200"/>
-    </resources>
 </document>

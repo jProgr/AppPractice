@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F620AE82389F541002FBB45 /* KF-ApAn48-7133-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F620AE72389F541002FBB45 /* KF-ApAn48-7133-4.jpg */; };
 		6F86B80F2377A52C00ABE52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86B80E2377A52C00ABE52C /* AppDelegate.swift */; };
 		6F86B8112377A52C00ABE52C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86B8102377A52C00ABE52C /* SceneDelegate.swift */; };
 		6F86B8132377A52C00ABE52C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86B8122377A52C00ABE52C /* ViewController.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F620AE72389F541002FBB45 /* KF-ApAn48-7133-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KF-ApAn48-7133-4.jpg"; sourceTree = "<group>"; };
 		6F86B80B2377A52C00ABE52C /* AppPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F86B80E2377A52C00ABE52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F86B8102377A52C00ABE52C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				6F86B8172377A53A00ABE52C /* Assets.xcassets */,
 				6F86B8192377A53A00ABE52C /* LaunchScreen.storyboard */,
 				6F86B81C2377A53A00ABE52C /* Info.plist */,
-				6F620AE72389F541002FBB45 /* KF-ApAn48-7133-4.jpg */,
 			);
 			path = AppPractice;
 			sourceTree = "<group>";
@@ -129,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F86B81B2377A53A00ABE52C /* LaunchScreen.storyboard in Resources */,
-				6F620AE82389F541002FBB45 /* KF-ApAn48-7133-4.jpg in Resources */,
 				6F86B8182377A53A00ABE52C /* Assets.xcassets in Resources */,
 				6F86B8162377A52C00ABE52C /* Main.storyboard in Resources */,
 			);

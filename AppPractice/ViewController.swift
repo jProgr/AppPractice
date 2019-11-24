@@ -2,19 +2,18 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    @IBOutlet var imageView: UIImageView!
-
+    @IBOutlet var button: UIButton!
+    
+    @IBOutlet var textView: UITextView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        imageView.isUserInteractionEnabled = true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    @IBAction func buttonTapped(_ sender: UIButton)
     {
-        let touch = touches.first
-        if touch?.view == imageView { print("Touched") }
-        else { print("Nothing") }
+        if textView.isEditable == true { textView.isEditable = false }
+        else { textView.isEditable = true }
     }
 }
