@@ -45,6 +45,9 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
+                    <connections>
+                        <outlet property="labelCode" destination="0eK-6d-XN7" id="vkp-jP-v50"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Jqb-RF-BLa">
