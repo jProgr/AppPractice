@@ -2,24 +2,15 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    @IBOutlet var labelCode: UILabel!
+    @IBOutlet var topImageView: UIImageView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        labelCode.isUserInteractionEnabled = true
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        labelCode.addGestureRecognizer(tapGesture)
     }
     
-    @objc func handleTap()
+    @IBAction func pinchDetected(_ sender: UIPinchGestureRecognizer)
     {
-        print("Tap on second label detected")
-    }
-    
-    @IBAction func tapped(_ sender: UITapGestureRecognizer)
-    {
-        print("Tap detected")
+        topImageView.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
     }
 }
