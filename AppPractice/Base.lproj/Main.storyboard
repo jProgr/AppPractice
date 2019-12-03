@@ -15,38 +15,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wtn-rR-fiM">
-                                <rect key="frame" x="67" y="269" width="241" height="129"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0N-r1-ox9">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="PaY-Q2-2Pq" appends="YES" id="jcc-xm-ESN"/>
+                                    <action selector="buttonTapped:" destination="e0R-Em-0Zo" eventType="touchUpInside" id="HuA-7c-GD7"/>
                                 </connections>
-                            </imageView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Wtn-rR-fiM" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="HCU-lj-gV3"/>
-                            <constraint firstItem="Wtn-rR-fiM" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="269" id="IFt-Ym-9eh"/>
-                            <constraint firstItem="Wtn-rR-fiM" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="67" id="ZmW-sA-Swl"/>
-                            <constraint firstItem="Wtn-rR-fiM" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="eOD-Be-PE9"/>
+                            <constraint firstItem="x0N-r1-ox9" firstAttribute="top" secondItem="iFZ-Lw-RKZ" secondAttribute="top" constant="318" id="OpV-fB-TVA"/>
+                            <constraint firstItem="x0N-r1-ox9" firstAttribute="centerY" secondItem="rRV-YO-KW5" secondAttribute="centerY" id="PMT-m6-VmS"/>
+                            <constraint firstItem="x0N-r1-ox9" firstAttribute="leading" secondItem="iFZ-Lw-RKZ" secondAttribute="leading" constant="164" id="Sza-0O-Bw0"/>
+                            <constraint firstItem="x0N-r1-ox9" firstAttribute="centerX" secondItem="rRV-YO-KW5" secondAttribute="centerX" id="isC-3p-aao"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="PaY-Q2-2Pq" appends="YES" id="ZCS-X0-lPG"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
-                    <connections>
-                        <outlet property="topImageView" destination="Wtn-rR-fiM" id="cuf-zf-Imb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7h-zKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="PaY-Q2-2Pq">
-                    <connections>
-                        <action selector="pinchDetected:" destination="e0R-Em-0Zo" id="lsg-QU-SOK"/>
-                    </connections>
-                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="-123.68815592203899"/>
         </scene>

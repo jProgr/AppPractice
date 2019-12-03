@@ -2,15 +2,18 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    @IBOutlet var topImageView: UIImageView!
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
-    
-    @IBAction func pinchDetected(_ sender: UIPinchGestureRecognizer)
+
+    @IBAction func buttonTapped(_ sender: UIButton)
     {
-        topImageView.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
+        let alert = UIAlertController(title: "Warning", message: "Zombies are loose!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK",
+                                     style: .default,
+                                     handler: { action -> Void in})
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
