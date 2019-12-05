@@ -13,19 +13,19 @@ class ViewController: UIViewController
     
     @IBAction func buttonTapped(_ sender: UIButton)
     {
-        let alert = UIAlertController(title: "Warning", message: "OwO", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK",
-            style: .default,
-            handler: { action -> Void in self.label.text = "OK" })
-        let cancelAction = UIAlertAction(title: "Cancel",
-            style: .cancel,
-            handler: { action -> Void in self.label.text = "Cancel" })
-        let destroyAction = UIAlertAction(title: "Destroy",
-            style: .destructive,
-            handler: { action -> Void in self.label.text = "Destroy" })
+        print("Button tapped")
+        let alert = UIAlertController(title: "Log In",
+            message: "Enter Password",
+            preferredStyle: .alert)
+        alert.addTextField(configurationHandler: {(textField) -> Void in
+            textField.placeholder = "Password here"
+            textField.isSecureTextEntry = true
+        })
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { action -> Void in
+            let savedText = alert.textFields![0] as UITextField
+            self.label.text = savedText.text
+        })
         alert.addAction(okAction)
-        alert.addAction(cancelAction)
-        alert.addAction(destroyAction)
         
         self.present(alert, animated: true, completion: nil)
     }
