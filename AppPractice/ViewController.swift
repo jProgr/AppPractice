@@ -2,7 +2,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    let petArray = [["Mammal", "cat", "dog", "hamster", "gerbil", "rabbit"], ["Bird", "parakeet", "parrot", "canary", "finch"], ["Fish", "tropical fish", "goldfish", "sea horses"], ["Reptile", "turtle", "snake", "lizard"]]
+    let petArray = [["Bird", "parakeet", "parrot", "canary", "finch", "cockatiel"], ["Fish", "tropical fish", "goldfish", "sea horses", "eel"], ["Mammal", "cat", "dog", "hamster", "gerbil", "rabbit", "mouse"], ["Reptile", "turtle", "snake", "lizard"]]
+    let indexArray = ["🦜", "🐠", "🐶", "🦎"]
     let cellID = "cellID"
 
     @IBOutlet var petTable: UITableView!
@@ -13,16 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         petTable.dataSource = self
         petTable.delegate = self
-    }
-
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
-    {
-        return petArray[section][0]
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int
-    {
-        return petArray.count
+        petTable.sectionIndexColor = UIColor.white
+        petTable.sectionIndexBackgroundColor = UIColor.black
+        petTable.sectionIndexTrackingBackgroundColor = UIColor.darkGray
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -38,6 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: cellID)
         }
         cell?.textLabel?.text = petArray[indexPath.section][indexPath.row + 1]
+
         return cell!
     }
 
@@ -48,5 +43,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let okAction = UIAlertAction(title: "OK", style: .default, handler: { action -> Void in })
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        return petArray.count
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
+        return petArray[section][0]
+    }
+
+    func sectionIndexTitles(for tableView: UITableView) -> [String]?
+    {
+        return indexArray
     }
 }
