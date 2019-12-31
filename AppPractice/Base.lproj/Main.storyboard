@@ -45,21 +45,37 @@
             </objects>
             <point key="canvasLocation" x="1076" y="-123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="CfH-dE-uGK">
             <objects>
-                <viewController id="sjR-3C-pWZ" sceneMemberID="viewController">
+                <viewController id="sjR-3C-pWZ" customClass="SecondViewController" customModule="AppPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52w-DF-TOE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-Oe-cCY">
+                                <rect key="frame" x="114" y="323" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wy3-Fm-kxn" firstAttribute="trailing" secondItem="JdV-Oe-cCY" secondAttribute="trailing" constant="127" id="4SH-Vr-m54"/>
+                            <constraint firstItem="JdV-Oe-cCY" firstAttribute="leading" secondItem="wy3-Fm-kxn" secondAttribute="leading" constant="114" id="cRN-U0-cKy"/>
+                            <constraint firstItem="JdV-Oe-cCY" firstAttribute="centerY" secondItem="52w-DF-TOE" secondAttribute="centerY" id="wXe-bj-mJg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wy3-Fm-kxn"/>
                     </view>
                     <navigationItem key="navigationItem" id="rtj-Y7-mnE"/>
+                    <connections>
+                        <outlet property="label" destination="JdV-Oe-cCY" id="uGb-mG-eZA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IY-OM-5yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2874" y="-124"/>
+            <point key="canvasLocation" x="2872.8000000000002" y="-124.58770614692655"/>
         </scene>
     </scenes>
 </document>
