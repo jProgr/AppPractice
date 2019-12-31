@@ -61,7 +61,13 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wy3-Fm-kxn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rtj-Y7-mnE"/>
+                    <navigationItem key="navigationItem" id="rtj-Y7-mnE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PZ6-Tz-d6w">
+                            <connections>
+                                <action selector="doneTapped:" destination="sjR-3C-pWZ" id="qvw-z0-FnC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IY-OM-5yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
