@@ -18,7 +18,13 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xCu-6m-P0I"/>
+                    <navigationItem key="navigationItem" id="xCu-6m-P0I">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="13z-pc-uOh">
+                            <connections>
+                                <action selector="buttonTapped:" destination="e0R-Em-0Zo" id="qAU-x5-i0L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="sjR-3C-pWZ" kind="show" identifier="firstLink" id="3LL-4i-fGN"/>
                     </connections>
@@ -56,29 +62,10 @@
                         <viewLayoutGuide key="safeArea" id="wy3-Fm-kxn"/>
                     </view>
                     <navigationItem key="navigationItem" id="rtj-Y7-mnE"/>
-                    <connections>
-                        <segue destination="pFd-HC-3PR" kind="show" identifier="secondLink" id="3VJ-51-f3Z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IY-OM-5yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2872.8000000000002" y="-124.58770614692655"/>
-        </scene>
-        <!--Third View Controller-->
-        <scene sceneID="PVf-YI-ozn">
-            <objects>
-                <viewController id="pFd-HC-3PR" customClass="ThirdViewController" customModule="AppPractice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A0E-71-5rq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="JPG-nx-h4y"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="QGS-Up-h2x"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CDc-Mb-Y1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3684" y="-125"/>
         </scene>
     </scenes>
 </document>
