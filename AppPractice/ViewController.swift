@@ -15,7 +15,6 @@ class ViewController: UIViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let nextVC = segue.destination as! SecondViewController
-        nextVC.navigationItem.title = "Second View Title"
-        nextVC.receivedString = "Passed text"
+        nextVC.navigationItem.title = "Second View Controller"
     }
 }
