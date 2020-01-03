@@ -18,7 +18,7 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="iFZ-Lw-RKZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="azB-BY-4lE"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="pencil.circle" catalog="system" selectedImage="pencil.circle" id="azB-BY-4lE"/>
                     <navigationItem key="navigationItem" id="xCu-6m-P0I">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="13z-pc-uOh">
                             <connections>
@@ -41,7 +41,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Xdg-OJ-xOg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SWP-hV-XkP"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="hurricane" catalog="system" selectedImage="hurricane" id="SWP-hV-XkP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56H-bq-aqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +53,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qay-qd-L8V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dmQ-cr-4FN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -66,4 +67,8 @@
             <point key="canvasLocation" x="2015.2" y="-123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hurricane" catalog="system" width="44" height="64"/>
+        <image name="pencil.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
